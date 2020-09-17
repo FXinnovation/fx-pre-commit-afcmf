@@ -1,0 +1,14 @@
+- id: afcmf_commit_validation
+  name: AFCMF Commit Validation
+  description: Verifies commit message and raises errors if AFCMF format is not respected
+  entry: afcmf_commit_validation.sh
+  language: script
+  stages:
+    - commit-msg
+  always_run: true
+  additional_dependencies:
+    - cat
+    - head
+    - wc
+    - tail
+    - bash
