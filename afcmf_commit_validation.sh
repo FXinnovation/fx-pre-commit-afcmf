@@ -5,7 +5,7 @@ COMMIT_FILE=$1
 LINES_COUNT=$(cat ${COMMIT_FILE} | wc -l)
 FIRST_LINE=$(head -n 1 ${COMMIT_FILE})
 if (( $LINES_COUNT > 1 )); then
-	SECOND_LINE=$(head -n 2 ${COMMIT_FILE} | tail -n 1)
+	SECOND_LINE=$(head -n 2 ${COMMIT_FILE} | tail -n 1 | sed '/^#/d')
 else
 	SECOND_LINE=""
 fi
@@ -17,5 +17,6 @@ fi
 
 if [ -n "$SECOND_LINE" ]; then
 	echo "AFCMF Error - The second line of your commit msg is not empty."
+	echo "$SECOND_LINE"
 	exit 1
 fi
