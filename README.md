@@ -8,7 +8,7 @@ Add the following to your `.pre-commit-config.yaml` in your repository:
 
 ```
 repos:
-- repo: git://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/pre-commit-afcmf
+- repo: https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/pre-commit-afcmf
   rev: <put version here>
   hooks:
     - id: afcmf_commit_validation
@@ -54,7 +54,7 @@ The following best practices were inspired by https://www.conventionalcommits.or
 * The test type MUST be used for code changes on all types of tests.
 * The doc type MUST be used for changes in documentation files e.g. README.md, CHANGELOG.md, etc
 * The revert type MUST be used when reverting a commit.
-* If the commit contains a breaking change (user will have to adapt their usage of the application) the type MUST be followed by the following: (BREAKING).
+* If the commit contains a breaking change (user will have to adapt their usage of the application) the title MUST contain the following string: (BREAKING).
 * The rest of the line SHOULD be used to briefly explain the objective of the commit.
 * The commit title MAY contain references to external tools (ticket number, etc)
 
