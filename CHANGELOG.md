@@ -1,4 +1,9 @@
 
+0.1.2 / 2021-03-01
+==================
+
+  * fix: addressing additional_dependencies deprecation
+
 0.1.1 / 2020-11-17
 ==================
 
