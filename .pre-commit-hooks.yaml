@@ -6,9 +6,3 @@
   stages:
     - commit-msg
   always_run: true
-  additional_dependencies:
-    - cat
-    - head
-    - wc
-    - tail
-    - bash
