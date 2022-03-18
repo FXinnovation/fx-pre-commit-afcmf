@@ -8,7 +8,7 @@ Add the following to your `.pre-commit-config.yaml` in your repository:
 
 ```
 repos:
-- repo: git://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/pre-commit-afcmf
+- repo: git://github.com/FXinnovation/fx-pre-commit-afcmf
   rev: <put version here>
   hooks:
     - id: afcmf_commit_validation
@@ -81,7 +81,7 @@ pre-commit install -t commit-msg
 
 ## Commit Messages
 
-This repository follows the [afcmf](https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/pre-commit-afcmf) standard for it's commit messages.
+This repository follows the [afcmf](https://github.com/FXinnovation/fx-pre-commit-afcmf) standard for it's commit messages.
 
 ## Changelog
 
