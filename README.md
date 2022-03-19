@@ -8,7 +8,7 @@ Add the following to your `.pre-commit-config.yaml` in your repository:
 
 ```
 repos:
-- repo: git://github.com/FXinnovation/fx-pre-commit-afcmf
+- repo: https://github.com/FXinnovation/fx-pre-commit-afcmf
   rev: <put version here>
   hooks:
     - id: afcmf_commit_validation
