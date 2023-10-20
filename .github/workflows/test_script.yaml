@@ -1,0 +1,15 @@
+name: Test pre-commit script
+
+on:
+  workflow_call:
+  push:
+
+jobs:
+  test-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v1
+
+      - name: test
+        run: ./tests/run-tests.sh

@@ -44,9 +44,11 @@ The following best practices were inspired by https://www.conventionalcommits.or
 * The commit title MUST be on a single line.
 * The commit title SHOULD NOT have over 51 characters.
 * The commit title MUST be prefixed with a type, which consists of a noun.
-* The type MUST be one of the following: feat, refactor, chore, maintenance, fix, test, doc, revert
+* The type MUST be one of the following: [feat, refactor, chore, maintenance, fix, test, doc, docs, build, revert, style] or be a merge commit
+* The type MAY contain an optional scope in parenthesis
+* The type MAY be followed by a exclamation point if it's a breaking change
 * The type MUST be followed by a colon and space.
-* The feat type MUST be used for changes that brings a new functionnality.
+* The feat type MUST be used for changes that brings a new functionality.
 * The refactor type MUST be used for code refactoring. These MUST NOT add new features, fix bugs, change test coverage, etc
 * The chore type MUST be used for maintenance tasks that do not impact the final artifact. e.g. .gitignore, Jenkinsfile, etc
 * The maintenance type MUST be used for maintenance tasks that do impact the final artifact. e.g. dependency updates, etc
@@ -54,9 +56,10 @@ The following best practices were inspired by https://www.conventionalcommits.or
 * The test type MUST be used for code changes on all types of tests.
 * The doc type MUST be used for changes in documentation files e.g. README.md, CHANGELOG.md, etc
 * The revert type MUST be used when reverting a commit.
-* If the commit contains a breaking change (user will have to adapt their usage of the application) the title MUST contain the following string: (BREAKING).
+* If the commit contains a breaking change (user will have to adapt their usage of the application) the type MUST contain an exclamation point before colon.
 * The rest of the line SHOULD be used to briefly explain the objective of the commit.
 * The commit title MAY contain references to external tools (ticket number, etc)
+* A merge commit title MUST start with the words "merge" or "Merge" or chore(merge):
 
 ### commit body
 
