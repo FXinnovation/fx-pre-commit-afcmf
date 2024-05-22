@@ -10,7 +10,7 @@ else
 	SECOND_LINE=""
 fi
 
-EXPRESSION='^((((build|chore|ci|doc|docs|maintenance|feat|fix|perf|refactor|revert|style|test){1}(\([a-zA-Z0-9 -.]+\))?(!)?:))|([Mm]erge)) .*$'
+EXPRESSION='^((((build|chore|ci|doc|docs|maintenance|feat|fix|perf|refactor|revert|style|test){1}(\([a-zA-Z0-9 -._]+\))?(!)?:))|([Mm]erge)) .*$'
 if ! echo "$FIRST_LINE" | grep -E "$EXPRESSION" > /dev/null; then
 	echo "AFCMF Error - The first line of your commit msg does not match \"$EXPRESSION\"."
 	echo "Please check https://www.conventionalcommits.org"
